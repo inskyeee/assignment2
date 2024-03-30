@@ -38,6 +38,6 @@ def gcd():
 
 # Example usage of the gcd function
 # Calculate the GCD of 48 and 18
-example_gcd = gcd(270, 192)
+example_gcd = gcd()
 
 print(example_gcd)
