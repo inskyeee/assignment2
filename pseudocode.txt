@@ -2,8 +2,8 @@ Input: Two positive integers, a and b
 Output: The greatest common divisor of a and b
 Begin
     1. While b != 0 do
-    2.   temp = b
-    3.   b = a mod b
-    4.   a = temp
-    5. Output a
+    2.   temp:= b;
+    3.   b:= a mod b;
+    4.   a:= temp;
+    5. Output a;
 End 
