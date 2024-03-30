@@ -1,0 +1,23 @@
+An interesting and simple extension to the Euclidean Algorithm could be calculating the Least Common Multiple (LCM) of two numbers. 
+The LCM is the smallest number that is a multiple of both numbers. This can be efficiently computed using the GCD of those numbers,
+as the LCM of two numbers multiplied by their GCD equals the product of the numbers themselves. This principle allows us to extend
+the functionality of our program beyond finding the GCD.
+
+Here's the pseudocode to include this extension:
+
+
+Begin
+    1. Function gcd(a, b);
+    2.    While b != 0 do
+    3.        temp:= b;
+    4.        b:= a mod b;
+    5.        a:= temp;
+    6.    Return a;
+    7.
+    8. Function lcm(a, b);
+    9.    Return (a * b) / gcd(a, b);
+    10. 
+    11. Input a, b;
+    12. 
+    13. Output gcd(a, b), lcm(a, b);
+End
